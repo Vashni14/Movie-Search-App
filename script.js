@@ -6,13 +6,13 @@ async function name() {
     let response=await fetch(URL);
     let data=await response.json(); 
     let tit=document.querySelector(".tit");
-    tit.innerHTML=`Title:${data["Title"]}`;
+    tit.innerHTML=`Title:${data.Title}`;
     let rel=document.querySelector(".rel");
-    rel.innerHTML=`Released:${data["Released"]}`;
+    rel.innerHTML=`Released:${data.Released}`;
     let gen=document.querySelector(".gen");
-    gen.innerHTML=`Genre:${data["Genre"]}`;
+    gen.innerHTML=`Genre:${data.Genre}`;
     let ac=document.querySelector(".ac");
-    ac.innerHTML=`Actors:${data["Actors"]}`;
+    ac.innerHTML=`Actors:${data.Actors}`;
     let pl=document.querySelector(".pl");
     pl.innerHTML=`Plot:${data.Plot}`;
     let ra = document.querySelector(".ra");
